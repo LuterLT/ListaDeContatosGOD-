@@ -17,7 +17,12 @@ namespace ListaDeContatosGOD_VS
             InitializeComponent();
         }
 
-        private void buttonIncluirContato_Click(object sender, EventArgs e)
+        private void textBoxNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonIncluirContato_Click_1(object sender, EventArgs e)
         {
             // Cria um objeto da classe contato.
             Contato contato = new Contato();
@@ -26,6 +31,11 @@ namespace ListaDeContatosGOD_VS
             contato.Telefone = textBoxTelefone.Text;
 
             listBoxContatos.Items.Add(contato.ToString());
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

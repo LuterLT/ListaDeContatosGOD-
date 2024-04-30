@@ -38,6 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.buttonOrganizar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBoxContatos
@@ -77,9 +78,9 @@
             // buttonIncluirContato
             // 
             this.buttonIncluirContato.Font = new System.Drawing.Font("Bauhaus 93", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonIncluirContato.Location = new System.Drawing.Point(97, 240);
+            this.buttonIncluirContato.Location = new System.Drawing.Point(97, 237);
             this.buttonIncluirContato.Name = "buttonIncluirContato";
-            this.buttonIncluirContato.Size = new System.Drawing.Size(210, 99);
+            this.buttonIncluirContato.Size = new System.Drawing.Size(124, 99);
             this.buttonIncluirContato.TabIndex = 4;
             this.buttonIncluirContato.Text = "Adicionar";
             this.buttonIncluirContato.UseVisualStyleBackColor = true;
@@ -132,12 +133,24 @@
             this.label4.Text = "Lista de Contatos";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
+            // buttonOrganizar
+            // 
+            this.buttonOrganizar.Font = new System.Drawing.Font("Bauhaus 93", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOrganizar.Location = new System.Drawing.Point(227, 237);
+            this.buttonOrganizar.Name = "buttonOrganizar";
+            this.buttonOrganizar.Size = new System.Drawing.Size(80, 99);
+            this.buttonOrganizar.TabIndex = 9;
+            this.buttonOrganizar.Text = "Organizar";
+            this.buttonOrganizar.UseVisualStyleBackColor = true;
+            this.buttonOrganizar.Click += new System.EventHandler(this.buttonOrganizar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.ClientSize = new System.Drawing.Size(695, 501);
+            this.Controls.Add(this.buttonOrganizar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -167,6 +180,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button buttonOrganizar;
     }
 }
 
